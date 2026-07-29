@@ -52,7 +52,7 @@ export function AboutSection() {
         </div>
 
         <div className="flex justify-center">
-          <div className="w-full max-w-sm rounded-2xl border border-gold/40 bg-card p-10 text-center">
+          <div className="gold-spin-border w-full max-w-sm rounded-2xl bg-card p-10 text-center">
             <p className="text-sm uppercase tracking-[0.28em] text-muted-foreground">
               Avaliação no Google
             </p>

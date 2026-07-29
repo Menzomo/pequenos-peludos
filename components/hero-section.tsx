@@ -62,7 +62,10 @@ export function HeroSection() {
         </div>
 
         <div className="relative">
-          <div className="relative mx-auto aspect-square w-full max-w-md overflow-hidden rounded-2xl border border-gold/30 bg-background shadow-2xl shadow-black/60">
+          <div
+            className="gold-spin-border relative mx-auto aspect-square w-full max-w-md overflow-hidden rounded-2xl bg-background shadow-2xl shadow-black/60"
+            style={{ '--gold-spin-bg': 'var(--background)' } as React.CSSProperties}
+          >
             <Image
               src="/images/logo-pequenos-peludos.png"
               alt="Pequenos Peludos — Estética Animal"

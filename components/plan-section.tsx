@@ -39,7 +39,14 @@ export function PlanSection() {
               </a>
             </div>
 
-            <div className="rounded-2xl border border-border bg-background/40 p-8">
+            <div
+              className="gold-spin-border rounded-2xl bg-background/40 p-8"
+              style={
+                {
+                  '--gold-spin-bg': 'color-mix(in oklch, var(--background) 40%, transparent)',
+                } as React.CSSProperties
+              }
+            >
               <p className="text-sm uppercase tracking-[0.28em] text-muted-foreground">
                 O que está incluso
               </p>

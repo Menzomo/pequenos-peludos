@@ -102,6 +102,8 @@
   --sidebar-accent-foreground: oklch(0.97 0.01 90);
   --sidebar-border: oklch(0.8 0.13 85 / 25%);
   --sidebar-ring: oklch(0.8 0.13 85 / 50%);
+
+  --gold-spin-bg: var(--card);
 }
 
 @layer base {
@@ -110,5 +112,38 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@property --border-spin-angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes border-spin {
+  to {
+    --border-spin-angle: 360deg;
+  }
+}
+
+@layer utilities {
+  .gold-spin-border {
+    position: relative;
+    border: 2px solid transparent;
+    background-image:
+      linear-gradient(var(--gold-spin-bg), var(--gold-spin-bg)),
+      conic-gradient(
+        from var(--border-spin-angle, 0deg),
+        transparent 0deg,
+        transparent 250deg,
+        var(--gold-soft) 300deg,
+        var(--gold) 330deg,
+        var(--gold-soft) 350deg,
+        transparent 360deg
+      );
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    animation: border-spin 3.5s linear infinite;
   }
 }

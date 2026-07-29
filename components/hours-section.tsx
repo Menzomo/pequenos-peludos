@@ -16,7 +16,7 @@ export function HoursSection() {
           </h2>
         </div>
 
-        <div className="mt-12 overflow-hidden rounded-2xl border border-border bg-card">
+        <div className="gold-spin-border mt-12 overflow-hidden rounded-2xl bg-card">
           <div className="flex items-center gap-3 border-b border-border px-7 py-5">
             <Clock className="size-5 text-gold" />
             <span className="font-serif text-lg text-foreground">
