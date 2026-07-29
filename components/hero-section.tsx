@@ -62,13 +62,13 @@ export function HeroSection() {
         </div>
 
         <div className="relative">
-          <div className="relative mx-auto aspect-4/5 w-full max-w-md overflow-hidden rounded-2xl border border-gold/30 shadow-2xl shadow-black/60">
+          <div className="relative mx-auto aspect-square w-full max-w-md overflow-hidden rounded-2xl border border-gold/30 bg-background shadow-2xl shadow-black/60">
             <Image
-              src="/images/hero-pet.png"
-              alt="Cão de pequeno porte com pelagem branca impecavelmente cuidada em sessão de fotos de estúdio"
+              src="/images/logo-pequenos-peludos.png"
+              alt="Pequenos Peludos — Estética Animal"
               fill
               priority
-              className="object-cover"
+              className="object-contain p-6 sm:p-10"
               sizes="(max-width: 1024px) 90vw, 40vw"
             />
             <div className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-gold/20" />
